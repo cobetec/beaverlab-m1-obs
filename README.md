@@ -3,7 +3,7 @@
 Get the video off a Beaverlab M1 WiFi microscope and into OBS on Windows, without
 running the phone app.
 
-The M1 (the `DDLM1-218b` variant) doesn't expose RTSP or any standard stream. The
+The M1 (the `DDLM1-xxx` variant) doesn't expose RTSP or any standard stream. The
 official app talks a Jieli proprietary protocol over the scope's own WiFi. I picked
 apart enough of it to:
 
@@ -13,7 +13,7 @@ apart enough of it to:
 - send the odd device command over the same link — most usefully a soft reboot that
   unsticks a frozen scope (e.g. a dead power button).
 
-Tested against my own unit only (`DDLM1-218b`, MJPEG at 1080p). Other M1 sub-models
+Tested against my own unit only (`DDLM1-xxx`, MJPEG at 1080p). Other M1 sub-models
 speak different protocols — see "Which M1 is this" below before you assume it works.
 
 ## Quick start
@@ -40,7 +40,7 @@ no matter what you ask for.
 ## Which M1 is this
 
 The app routes by exact WiFi SSID, so the SSID tells you which protocol your scope
-speaks. This repo is for **`DDLM1-218b`** (no hyphen), a Jieli-based unit. If your
+speaks. This repo is for **`DDLM1-xxx`** (no hyphen), a Jieli-based unit. If your
 SSID is different, the protocol probably is too:
 
 - `DDL-M1` (with the hyphen) — different again, a custom UDP-JPEG thing.
