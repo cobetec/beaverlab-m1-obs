@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+
+# runtime artifacts the script writes
+m1_config.json
+m1.sdp
+raw_*.bin
+packets_2224.bin
